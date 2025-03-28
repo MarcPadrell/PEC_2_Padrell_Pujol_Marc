@@ -57,6 +57,10 @@ plt.legend(handles=handles, title='Quality Scores', loc='upper left', bbox_to_an
 for ax in axes:
     ax.grid(True, linestyle='--', linewidth=0.5, alpha=0.6)
 
+# Añadimos una nota de fuente de datos
+plt.figtext(0.01, 0.01, 'Source: UCI ML Red Wine Quality Dataset', 
+            fontsize=9, style='italic')
+
 plt.tight_layout()
 
 # Mostramos el gráfico
